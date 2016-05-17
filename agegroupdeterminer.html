@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Age Group</title>
+</head>
+<body>
+	<div style="text-align: center">
+		<h1>Determine your age group</h1>
+		<button onClick="determiner()">Start</button>
+
+		<p id="one" onshow="return"class="message"></p>	
+		<p id="two" class="message"></p>
+		<p id="three" class="message"></p>	
+		<p id="four" class="message"></p>	
+	</div>	
+</body>
+
+<script>
+	// var retDeterminer = determiner();
+	function determiner() {
+		var age = prompt("Hi! What's your age?");
+		// var retVal = determiner();
+
+		if (age != 0 && age <= 10) {
+	  		// document.write("Hey, kid");
+	  		document.getElementById("one").innerHTML = "Hey kid";
+	  		// document.getElementsByClassName("message").innerHTML = "Teen";
+	  		return true;
+
+		}
+
+		else if ( age >= 11 && age <= 19 ) {
+			// document.write("Whoa, we have a teen here!");
+			document.getElementById("two").innerHTML = "Teen";
+			// document.getElementsByClassName("message").innerHTML = "Whoa, we have a teen here!";
+		}
+
+		else if ( age >= 20 && age <= 30) {	
+	  		// document.write("Okay, you're a young adult");
+	  		document.getElementById("three").innerHTML = "Okay, you're a young adult";
+		}
+	  
+		else if  ( age >= 31 && age <= 100) {
+	  		// document.write("Adult in the house!");
+	  		document.getElementById("four").innerHTML = "Adult in the house!";
+		}
+
+		else {
+			document.write("Are you sure about that? Just to be sure, enter your age again");
+		}
+
+		// return retVal;
+
+		// while ( age != 1000 ) {
+			// return retVal;
+		// }
+	}
+
+	// return retDeterminer;	
+</script>
+</html>
+
+
+<!-- 4 types of data in javascript -->
+<!-- Data -->
+<!-- Integer -->
+<!-- Null -->
+<!--  -->
